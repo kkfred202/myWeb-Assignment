@@ -1,0 +1,340 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  background: whitesmoke;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 16px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background: gainsboro;
+}
+
+header {
+  padding: 40px;
+  align-items: center;
+}
+
+header h1 {
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  gap: 10px;
+  margin: auto;
+}
+
+.header-desc {
+  flex: 1;
+  padding: 16px;
+}
+
+.header-desc h3 {
+  text-align: center;
+}
+
+.header-desc p {
+  text-align: justify;
+}
+
+.header-text {
+  flex: 1;
+  padding: 8px;
+  text-align: left;
+}
+
+.header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+main {
+  flex: 1;
+  padding: 40px 40px 80px 40px;
+  justify-content: center;
+}
+
+main section {
+  margin-bottom: 20px;
+}
+
+main h2 {
+  padding: 16px;
+  text-align: center;
+}
+
+main p {
+  padding: 16px;
+}
+
+.intro {
+  padding: 40px;
+  color: white;
+  border-radius: 8px;
+  background: rgb(13, 20, 54);
+}
+.services {
+  padding: 16px;
+  background: whitesmoke;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 20px;
+}
+
+.service {
+  flex: 0 0 calc(33.33% - 20px);
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+}
+
+.service-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.service h3 {
+  margin: 10px 0;
+}
+
+.service p {
+  color: #555;
+}
+
+footer {
+  background: rgb(3, 7, 24);
+  color: whitesmoke;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.mission p {
+  text-align: center;
+}
+
+.mission {
+  color: white;
+  border-radius: 8px;
+  background: rgb(13, 20, 54);
+}
+
+.team {
+  padding: 16px;
+  background: whitesmoke;
+  border-radius: 5px;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+.team-member {
+  flex: 0 0 calc(33.33% - 20px);
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member img {
+  width: 250px;
+  height: auto;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  gap: 10%;
+  padding: 16px;
+}
+
+.contact-form,
+.contact-info {
+  flex: 1;
+  padding: 16px;
+}
+
+.contact-form {
+  overflow: auto;
+  margin-right: 20px;
+}
+
+.contact-form h2,
+.contact-info h2 {
+  margin: 0;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  background: whitesmoke;
+}
+
+.form-group {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.form-group label {
+  flex: 0 0 80px;
+}
+
+.form-group input,
+.form-group textarea {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+form button {
+  margin: 0;
+  padding: 10px;
+  background: #212020;
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+  width: 100%;
+}
+
+form button:hover {
+  background: #555;
+}
+
+.contact-info {
+  background: whitesmoke;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.contact-info h3 {
+  text-align: center;
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  padding-bottom: 40px;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social-icons li {
+  margin-right: 10px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a i {
+  margin-right: 5px;
+  font-size: 44px;
+  color: darkblue;
+}
+
+@media screen and (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+  }
+  .services-grid {
+    flex-direction: column;
+  }
+
+  .team-grid {
+    flex-direction: column;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    margin-right: 0;
+  }
+
+  .mission p {
+    text-align: start;
+  }
+}
